@@ -1,17 +1,81 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./components/btn";
+
+/* Définition des polices personnalisées */
+@font-face
+{
+    font-family: 'Roboto';
+    src: url('font/Roboto-regular.ttf');
+    src: url('font/Roboto-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: 'Shrikhand';
+    src: url('font/Shrikhand.ttf');
+    src: url('font/Shrikhand.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Eléments principaux de la page */
 body
 {
+    font-family: $font-principale;
     width: 100%;
     margin: auto;
 }
 
+/* Header */
 .header-omf{
+    position: absolute;
     background: white;
     width:100%;
-    height:50px;
+    height:65px;
+    box-shadow: $shadow;
         &__cardpicture{
             display: block;
             margin: auto;
-            margin-top: 12px;
+            margin-top: 18px;
             width: 50%
         }  
+}
+
+/* Under header */
+.under-header{
+    background: #ececec;
+    height: 410px;
+}
+.location{
+    background: lightgray;
+    &__link{
+        height: 100px;
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 15px;
+        margin-left: 100px;
+        @include link-texte;
+    }
+    &__text{
+        margin:0;
+        margin-left:20px;
+    }
+    .fas{
+        margin-bottom: 2px;
+    }
+}
+.bloc-accroche{
+    &__title{
+        width: 250px;
+        text-align: center;
+        margin: 40px auto 20px auto;
+    }
+    &__text{
+        font-weight: $size-soustitle;
+        font-size: 1.1rem;
+        text-align: center;
+        margin:0;
+    }
 }

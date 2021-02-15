@@ -1,0 +1,14 @@
+.omf-btn{
+    width:220px;
+    height:50px;
+    margin:30px auto;
+    border-radius:30px;
+    background: $gradient;
+    box-shadow: $shadow;
+    &__title{
+        text-align: center;
+        padding-top: 15px;
+        color:white;
+        font-weight: $size-title;
+    }
+}
