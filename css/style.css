@@ -5,13 +5,13 @@
   margin: 30px auto;
   border-radius: 30px;
   background: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: 0 3px 5px grey;
+  box-shadow: 0 3px 5px #9e9e9e;
 }
 .omf-btn__title {
   text-align: center;
   padding-top: 15px;
   color: white;
-  font-weight: bold;
+  font-weight: bold 1.5rem;
 }
 
 /* Définition des polices personnalisées */
@@ -42,7 +42,7 @@ body {
   background: white;
   width: 100%;
   height: 65px;
-  box-shadow: 0 3px 5px grey;
+  box-shadow: 0 3px 5px #9e9e9e;
 }
 .header-omf__cardpicture {
   display: block;
@@ -68,7 +68,7 @@ body {
   margin-left: 100px;
   text-decoration: none;
   color: black;
-  font-weight: bold;
+  font-weight: bold 1.5rem;
   font-size: 1rem;
 }
 .location__text {
