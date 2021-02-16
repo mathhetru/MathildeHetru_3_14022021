@@ -1,4 +1,6 @@
 .omf-btn{
+    display: block;
+    text-decoration: none;
     width:220px;
     height:50px;
     margin:30px auto;
@@ -9,6 +11,9 @@
         text-align: center;
         padding-top: 15px;
         color:white;
-        font-weight: $size-title;
+        font-weight: $weight-title;
+    }
+    &:hover{
+        background: $primaire;
     }
 }

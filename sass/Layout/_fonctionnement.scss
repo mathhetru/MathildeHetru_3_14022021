@@ -1,0 +1,52 @@
+.bloc-title{
+    font-weight: $weight-title;
+    font-size: $size-title;
+    margin:0;
+}
+.bloc-fonctionnement{
+    height:400px;
+    margin: $base-margin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.onglet-fonct{
+    text-decoration:none;
+    display: flex;
+    align-items: center;
+    background: $color-fond;
+    height: 80px;
+    border-radius: 20px;
+    margin-left: 10px;
+    box-shadow: $shadow-soft;
+    &__ball{
+        position: relative;
+        margin-left:-10px;
+        height: 27px;
+        width: 27px;
+        background: $primaire;
+        border-radius: 20px;
+    }
+    .fas{
+        width:15px;
+        height:15px;
+        color: $color-shadow;
+        margin-left: 20px;
+    }
+    &__numb{
+        margin:3px 0 0 9px;
+        font-weight: $weight-title;
+        color: white;
+    }
+    &__text{
+        @include link-texte;
+        margin-left: 18px;
+    }
+    &:hover{
+        background: lighten($primaire, 35%);
+        .fas{
+            color: $primaire;
+        }
+    }
+}
