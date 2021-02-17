@@ -200,6 +200,7 @@
 .footer-omf__title {
   color: white;
   font-family: "Shrikhand";
+  letter-spacing: 0.05rem;
   margin: 0;
   padding: 20px 0px 18px 0px;
 }
