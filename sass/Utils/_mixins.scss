@@ -4,3 +4,38 @@
     font-weight: $weight-title;
     font-size: $size-soustitle ;
     }
+
+@mixin newcard {
+    position:absolute;
+    right: 15px;
+    top: 15px;
+    background: $tertiaire;
+    height: 30px;
+    width: 80px;
+    border-radius: 2px;
+    &text{
+        font-size: 0.9rem;
+        text-align: center;
+        color: darken($tertiaire, 40%);
+        margin-top: 5px;
+    }
+}
+
+@mixin title {
+    margin:15px 0px 5px 15px;
+    font-weight: $weight-title;
+    font-size: $size-soustitle;
+}
+
+@mixin sous-title {
+    margin:0px 0px 0px 15px;
+    font-weight: $weight-soustitle;
+    font-size: $size-soustitle
+}
+
+@mixin heart{
+    font-size: 1.5rem;
+    position:absolute;
+    right:25px;
+    bottom: 25px;
+}

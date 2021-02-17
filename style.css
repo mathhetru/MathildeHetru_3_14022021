@@ -59,6 +59,7 @@
 
 .bloc-fonctionnement {
   height: 400px;
+  padding-bottom: 40px;
   margin: 20px;
   display: flex;
   flex-direction: column;
@@ -106,6 +107,87 @@
 }
 .onglet-fonct:hover .fas {
   color: #9356DC;
+}
+
+.fond-gris {
+  background: #ececec;
+}
+
+.bloc-restaurant {
+  height: 1150px;
+  margin: 20px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.bloc-title {
+  margin-top: 40px;
+}
+
+.rest-prev {
+  position: relative;
+  background: white;
+  height: 250px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 7px #d3d3d3;
+}
+.rest-prev__link {
+  text-decoration: none;
+  color: black;
+}
+.rest-prev__card {
+  overflow: hidden;
+  height: 70%;
+}
+.rest-prev--cardpicture {
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.rest-prev__new {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background: #99E2D0;
+  height: 30px;
+  width: 80px;
+  border-radius: 2px;
+}
+.rest-prev__newtext {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #278870;
+  margin-top: 5px;
+}
+.rest-prev__title {
+  margin: 15px 0px 5px 15px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.rest-prev__place {
+  margin: 0px 0px 0px 15px;
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+.rest-prev__heart .far {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
+.rest-prev__heart .fas {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  color: #9356DC;
+  opacity: 0;
+}
+.rest-prev__heart:hover {
+  opacity: 1;
 }
 
 .omf-btn {

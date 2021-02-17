@@ -1,0 +1,61 @@
+// restaurants
+.fond-gris{
+    background: $color-fond;
+}
+
+.bloc-restaurant{
+    height:1150px;
+    margin: $base-margin;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bloc-title{
+    margin-top: 40px;
+}
+
+.rest-prev{
+    position: relative;
+    background: white;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: $shadow-soft;
+    &__link{
+    text-decoration:none;
+    color: black;
+    }
+    &__card{
+        overflow: hidden;
+        height: 70%;
+    }
+    &--cardpicture{
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__new{
+        @include newcard
+    }
+    &__title{
+        @include title
+    }
+    &__place{
+        @include sous-title
+    }
+    &__heart{
+        .far{
+            @include heart;
+        }
+        .fas{
+            @include heart;
+            color: $primaire;
+            opacity: 0;
+        }
+        &:hover{
+            opacity:1;
+        }
+    }
+}
