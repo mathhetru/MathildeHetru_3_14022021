@@ -1,8 +1,8 @@
-@mixin link-texte {
+@mixin link-texte ($color: black, $weight: $weight-title, $size: $size-soustitle){
     text-decoration: none;
-    color: black;
-    font-weight: $weight-title;
-    font-size: $size-soustitle ;
+    color: $color;
+    font-weight: $weight;
+    font-size: $size ;
     }
 
 @mixin newcard {
@@ -36,6 +36,6 @@
 @mixin heart{
     font-size: 1.5rem;
     position:absolute;
-    right:25px;
+    right: 25px;
     bottom: 25px;
 }

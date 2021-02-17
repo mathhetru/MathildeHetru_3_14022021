@@ -4,6 +4,7 @@
 @import "./layout/nav";
 @import "./layout/fonctionnement";
 @import "./layout/restaurant";
+@import "./layout/footer";
 @import "./components/btn";
 
 // Définition des polices personnalisées 
@@ -18,10 +19,10 @@
 @font-face
 {
     font-family: 'Shrikhand';
-    src: url('font/Shrikhand.ttf');
-    src: url('font/Shrikhand.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    src: url('font/Shrikhand-Regular.ttf');
+    src: url('font/Shrikhand-Regular.ttf') format('truetype');
+    font-weight:lighter;
+    font-style:normal;
 }
 
 // Eléments principaux de la page

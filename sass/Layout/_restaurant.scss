@@ -45,17 +45,15 @@
     &__place{
         @include sous-title
     }
-    &__heart{
-        .far{
-            @include heart;
-        }
-        .fas{
-            @include heart;
-            color: $primaire;
-            opacity: 0;
-        }
+    .far{
+        @include heart;
+    }
+    .fas{
+        @include heart;
+        color: $primaire;
+        opacity: 0;
         &:hover{
             opacity:1;
-        }
+        } 
     }
 }

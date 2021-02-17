@@ -60,7 +60,7 @@
 .bloc-fonctionnement {
   height: 400px;
   padding-bottom: 40px;
-  margin: 20px;
+  margin: 0px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -115,7 +115,7 @@
 
 .bloc-restaurant {
   height: 1150px;
-  margin: 20px;
+  margin: 0px 20px;
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
@@ -172,13 +172,13 @@
   font-weight: normal;
   font-size: 1.1rem;
 }
-.rest-prev__heart .far {
+.rest-prev .far {
   font-size: 1.5rem;
   position: absolute;
   right: 25px;
   bottom: 25px;
 }
-.rest-prev__heart .fas {
+.rest-prev .fas {
   font-size: 1.5rem;
   position: absolute;
   right: 25px;
@@ -186,8 +186,41 @@
   color: #9356DC;
   opacity: 0;
 }
-.rest-prev__heart:hover {
+.rest-prev .fas:hover {
   opacity: 1;
+}
+
+.footer-omf {
+  background: #525252;
+  height: 200px;
+}
+.footer-omf__bloc {
+  margin: 0px 20px;
+}
+.footer-omf__title {
+  color: white;
+  font-family: "Shrikhand";
+  margin: 0;
+  padding: 20px 0px 18px 0px;
+}
+.footer-omf__bloctext {
+  margin: 8px 0;
+}
+.footer-omf__bloctext .fas {
+  font-size: 0.7rem;
+  margin-right: 8px;
+}
+.footer-omf__bloclink {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.footer-omf__bloclinklight {
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+  font-size: 1rem;
 }
 
 .omf-btn {
@@ -219,9 +252,9 @@
 }
 @font-face {
   font-family: "Shrikhand";
-  src: url("font/Shrikhand.ttf");
-  src: url("font/Shrikhand.ttf") format("truetype");
-  font-weight: normal;
+  src: url("font/Shrikhand-Regular.ttf");
+  src: url("font/Shrikhand-Regular.ttf") format("truetype");
+  font-weight: lighter;
   font-style: normal;
 }
 body {
