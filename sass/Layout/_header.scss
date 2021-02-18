@@ -5,10 +5,17 @@
     width:100%;
     height:65px;
     box-shadow: $shadow;
-        &__cardpicture{
-            display: block;
-            margin: auto;
-            margin-top: 18px;
-            width: 50%
-        }  
+    &__logo{
+        display: block;
+        margin: auto;
+        margin-top: 18px;
+        width: 50%
+    }
 }
+
+.underheader-omf{
+    &__picture{
+    height: 410px;
+    }
+}
+

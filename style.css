@@ -5,11 +5,15 @@
   height: 65px;
   box-shadow: 0 2px 4px #9e9e9e;
 }
-.header-omf__cardpicture {
+.header-omf__logo {
   display: block;
   margin: auto;
   margin-top: 18px;
   width: 50%;
+}
+
+.underheader-omf__picture {
+  height: 410px;
 }
 
 .under-header {
@@ -29,7 +33,7 @@
   text-decoration: none;
   color: black;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .location__text {
   margin: 0;
@@ -99,7 +103,7 @@
   text-decoration: none;
   color: black;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-left: 18px;
 }
 .onglet-fonct:hover {
@@ -111,6 +115,9 @@
 
 .fond-gris {
   background: #ececec;
+}
+.fond-gris__withbr {
+  border-radius: 20px;
 }
 
 .bloc-restaurant {
@@ -165,12 +172,12 @@
 .rest-prev__title {
   margin: 15px 0px 5px 15px;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .rest-prev__place {
   margin: 0px 0px 0px 15px;
   font-weight: normal;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .rest-prev .far {
   font-size: 1.5rem;

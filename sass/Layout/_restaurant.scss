@@ -1,6 +1,9 @@
 // restaurants
 .fond-gris{
     background: $color-fond;
+    &__withbr{
+        border-radius: 20px;
+    }
 }
 
 .bloc-restaurant{
