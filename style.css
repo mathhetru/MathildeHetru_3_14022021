@@ -3,7 +3,19 @@
   background: white;
   width: 100%;
   height: 65px;
-  box-shadow: 0 2px 4px #9e9e9e;
+  box-shadow: 0 2px 4px #636363cc;
+}
+.header-omf__arrow {
+  text-decoration: none;
+  color: #636363cc;
+  font-weight: bold;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+.header-omf__arrow:hover {
+  color: rgba(0, 0, 0, 0.8);
 }
 .header-omf__logo {
   display: block;
@@ -12,8 +24,14 @@
   width: 50%;
 }
 
+.underheader-omf {
+  overflow: hidden;
+  height: 320px;
+}
 .underheader-omf__picture {
-  height: 410px;
+  height: 400px;
+  width: 110%;
+  object-fit: scale-down;
 }
 
 .under-header {
@@ -91,7 +109,7 @@
 .onglet-fonct .fas {
   width: 15px;
   height: 15px;
-  color: #9e9e9e;
+  color: #636363cc;
   margin-left: 20px;
 }
 .onglet-fonct__numb {
@@ -198,7 +216,7 @@
 }
 
 .footer-omf {
-  background: #525252;
+  background: rgba(23, 23, 23, 0.8);
   height: 200px;
 }
 .footer-omf__bloc {
@@ -239,7 +257,7 @@
   margin: 30px auto;
   border-radius: 30px;
   background: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: 0 2px 4px #9e9e9e;
+  box-shadow: 0 2px 4px #636363cc;
 }
 .omf-btn__title {
   text-align: center;
