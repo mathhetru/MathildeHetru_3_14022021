@@ -1,0 +1,9 @@
+.underheader-omf{
+    overflow: hidden;
+    height: 320px;
+       &__picture{
+        height: 400px;
+        width: 110%;
+        object-fit:scale-down;
+    }
+}
