@@ -33,9 +33,9 @@
     font-size: $size-soustitle
 }
 
-@mixin heart{
+@mixin heart ($bottom: 25px){
     font-size: 1.5rem;
     position:absolute;
     right: 25px;
-    bottom: 25px;
+    bottom: $bottom;
 }

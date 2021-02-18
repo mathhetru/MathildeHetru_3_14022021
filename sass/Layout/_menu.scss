@@ -1,0 +1,23 @@
+// menus pages
+.fond-gris-menu{
+    position: relative;
+    background-color: $color-fond;
+    border-radius: 45px 45px 0px 0px;
+    margin-top:-50px;
+}
+
+.page-menu{
+    margin: $base-margin;
+    &__title{
+        font-family: $font-secondaire;
+        font-size: 1.75rem;
+        margin:0;
+        padding-top: 20px;
+    }
+
+}
+
+.far, .fas{
+    @include heart($bottom: none);
+    top: 25px;
+}
