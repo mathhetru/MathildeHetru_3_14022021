@@ -220,24 +220,109 @@
   background-color: #ececec;
   border-radius: 45px 45px 0px 0px;
   margin-top: -50px;
+  padding-bottom: 10px;
 }
 
-.page-menu {
+.page-restaurant {
   margin: 0px 20px;
 }
-.page-menu__title {
+.page-restaurant__title {
   font-family: "Shrikhand";
   font-size: 1.75rem;
   margin: 0;
   padding-top: 20px;
 }
-
-.far, .fas {
+.page-restaurant .far {
   font-size: 1.5rem;
   position: absolute;
   right: 25px;
   bottom: none;
-  top: 25px;
+  top: 30px;
+}
+.page-restaurant .fas {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 25px;
+  bottom: none;
+  top: 30px;
+  color: #9356DC;
+  opacity: 0;
+}
+.page-restaurant .fas:hover {
+  opacity: 1;
+}
+
+.page-menu {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.page-menu__title {
+  margin-bottom: 15px;
+}
+.page-menu__text {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 20px 0px 8px 0px;
+}
+.page-menu__line {
+  background-color: #99E2D0;
+  margin: 0;
+  height: 3px;
+  width: 40px;
+}
+.page-menu__bloc {
+  margin-bottom: 15px;
+  background: white;
+  height: 70px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 7px #d3d3d3;
+  position: relative;
+}
+.page-menu__link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.page-menu__link:hover .page-menu__check {
+  opacity: 1;
+}
+.page-menu__link:hover .page-menu__prix {
+  right: 60px;
+}
+.page-menu__plat {
+  margin: 15px 0px 5px 15px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.page-menu__accompagnement {
+  margin: 0px 0px 0px 15px;
+  font-weight: normal;
+  font-size: 0.85rem;
+  overflow-x: hidden;
+}
+.page-menu__prix {
+  background-color: white;
+  width: 50px;
+  position: absolute;
+  right: 0px;
+  top: 22px;
+}
+.page-menu__check {
+  position: absolute;
+  background-color: #99E2D0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 65px;
+  border-radius: 0px 20px 20px 0px;
+  opacity: 0;
+}
+.page-menu .fa-check-circle {
+  color: white;
+  opacity: 1;
 }
 
 .footer-omf {

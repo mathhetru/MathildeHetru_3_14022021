@@ -27,10 +27,10 @@
     font-size: $size-soustitle;
 }
 
-@mixin sous-title {
+@mixin sous-title ($size: $size-soustitle){
     margin:0px 0px 0px 15px;
     font-weight: $weight-soustitle;
-    font-size: $size-soustitle
+    font-size: $size;
 }
 
 @mixin heart ($bottom: 25px){
