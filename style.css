@@ -70,7 +70,7 @@
   font-weight: normal;
   font-size: 1.1rem;
   text-align: center;
-  margin: 0;
+  margin: 0 10px;
 }
 
 .bloc-title {
@@ -197,13 +197,13 @@
   font-weight: normal;
   font-size: 1rem;
 }
-.rest-prev .far {
+.rest-prev .far.fa-heart {
   font-size: 1.5rem;
   position: absolute;
   right: 25px;
   bottom: 25px;
 }
-.rest-prev .fas {
+.rest-prev .fas.fa-heart {
   font-size: 1.5rem;
   position: absolute;
   right: 25px;
@@ -211,7 +211,7 @@
   color: #9356DC;
   opacity: 0;
 }
-.rest-prev .fas:hover {
+.rest-prev .fas.fa-heart:hover {
   opacity: 1;
 }
 
@@ -232,14 +232,14 @@
   margin: 0;
   padding-top: 20px;
 }
-.page-restaurant .far {
+.page-restaurant .far.fa-heart {
   font-size: 1.5rem;
   position: absolute;
   right: 25px;
   bottom: none;
   top: 30px;
 }
-.page-restaurant .fas {
+.page-restaurant .fas.fa-heart {
   font-size: 1.5rem;
   position: absolute;
   right: 25px;
@@ -248,7 +248,7 @@
   color: #9356DC;
   opacity: 0;
 }
-.page-restaurant .fas:hover {
+.page-restaurant .fas.fa-heart:hover {
   opacity: 1;
 }
 
@@ -320,7 +320,7 @@
   border-radius: 0px 20px 20px 0px;
   opacity: 0;
 }
-.page-menu .fa-check-circle {
+.page-menu .fas.fa-check-circle {
   color: white;
   opacity: 1;
 }

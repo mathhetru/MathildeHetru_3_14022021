@@ -48,10 +48,10 @@
     &__place{
         @include sous-title
     }
-    .far{
+    .far.fa-heart{
         @include heart;
     }
-    .fas{
+    .fas.fa-heart{
         @include heart;
         color: $primaire;
         opacity: 0;

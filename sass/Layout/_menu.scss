@@ -15,11 +15,11 @@
         margin:0;
         padding-top: 20px;
     }
-    .far{
+    .far.fa-heart{
         @include heart($bottom: none);
         top: 30px;
     }
-    .fas{
+    .fas.fa-heart{
         @include heart($bottom: none);
         top: 30px;
         color: $primaire;
@@ -90,7 +90,7 @@
         border-radius: 0px 20px 20px 0px;
         opacity:0;
     }
-    .fa-check-circle{
+    .fas.fa-check-circle{
         color:white;
         opacity: 1;
     }
