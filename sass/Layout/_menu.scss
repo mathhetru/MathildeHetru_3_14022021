@@ -56,24 +56,22 @@
         border-radius: 20px;
         box-shadow: $shadow-soft;
         position: relative;
-        }
-    &__link{
-        @include link-texte;
         &:hover .page-menu__check{
             opacity:1;
         }
         &:hover .page-menu__prix{
             right: 60px;
         }
-    }
+        }
     &__plat{
         @include title
         }
     &__accompagnement{
-        @include sous-title ($size: 0.85rem); 
-        overflow-x: hidden;
+        @include sous-title ($size: 0.85rem);
+        overflow: hidden;
         }
     &__prix{
+        font-weight: bold;
         background-color: white;
         width:50px;
         position: absolute;

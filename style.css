@@ -280,16 +280,10 @@
   box-shadow: 2px 2px 7px #d3d3d3;
   position: relative;
 }
-.page-menu__link {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  font-size: 1rem;
-}
-.page-menu__link:hover .page-menu__check {
+.page-menu__bloc:hover .page-menu__check {
   opacity: 1;
 }
-.page-menu__link:hover .page-menu__prix {
+.page-menu__bloc:hover .page-menu__prix {
   right: 60px;
 }
 .page-menu__plat {
@@ -301,9 +295,10 @@
   margin: 0px 0px 0px 15px;
   font-weight: normal;
   font-size: 0.85rem;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .page-menu__prix {
+  font-weight: bold;
   background-color: white;
   width: 50px;
   position: absolute;
