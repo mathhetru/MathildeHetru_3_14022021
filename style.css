@@ -21,7 +21,7 @@
   display: block;
   margin: auto;
   margin-top: 18px;
-  width: 50%;
+  width: 200px;
 }
 
 .underheader-omf {
@@ -70,7 +70,7 @@
   font-weight: normal;
   font-size: 1.1rem;
   text-align: center;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .bloc-title {
@@ -321,6 +321,10 @@
   opacity: 0;
 }
 .page-menu .fas.fa-check-circle {
+  position: absolute;
+  left: 20px;
+  top: 25px;
+  font-size: 1.5rem;
   color: white;
   opacity: 1;
 }
