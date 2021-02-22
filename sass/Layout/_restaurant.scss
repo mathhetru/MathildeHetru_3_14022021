@@ -50,6 +50,10 @@
     }
     .far.fa-heart{
         @include heart;
+        &:hover{
+            opacity: 0;
+            transition: .01s ;
+        } 
     }
     .fas.fa-heart{
         @include heart;
@@ -57,6 +61,7 @@
         opacity: 0;
         &:hover{
             opacity:1;
-        } 
+            transition: .3s ease-in-out;
+        }  
     }
 }

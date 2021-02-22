@@ -126,9 +126,11 @@
 }
 .onglet-fonct:hover {
   background: #f2eafb;
+  transition: 0.5s linear;
 }
 .onglet-fonct:hover .fas {
   color: #9356DC;
+  transition: 0.5s linear;
 }
 
 .fond-gris {
@@ -203,6 +205,10 @@
   right: 25px;
   bottom: 25px;
 }
+.rest-prev .far.fa-heart:hover {
+  opacity: 0;
+  transition: 0.01s;
+}
 .rest-prev .fas.fa-heart {
   font-size: 1.5rem;
   position: absolute;
@@ -213,6 +219,7 @@
 }
 .rest-prev .fas.fa-heart:hover {
   opacity: 1;
+  transition: 0.3s ease-in-out;
 }
 
 .fond-gris-menu {
@@ -239,6 +246,10 @@
   bottom: none;
   top: 30px;
 }
+.page-restaurant .far.fa-heart:hover {
+  opacity: 0;
+  transition: 0.01s;
+}
 .page-restaurant .fas.fa-heart {
   font-size: 1.5rem;
   position: absolute;
@@ -250,6 +261,7 @@
 }
 .page-restaurant .fas.fa-heart:hover {
   opacity: 1;
+  transition: 0.3s ease-in-out;
 }
 
 .page-menu {
@@ -273,6 +285,7 @@
   width: 40px;
 }
 .page-menu__bloc {
+  animation: SlideDown 0.5s ease-in-out;
   margin-bottom: 15px;
   background: white;
   height: 70px;
@@ -281,10 +294,16 @@
   position: relative;
 }
 .page-menu__bloc:hover .page-menu__check {
-  opacity: 1;
+  width: 65px;
+  transition: width 0.5s;
 }
 .page-menu__bloc:hover .page-menu__prix {
   right: 60px;
+  transition: right 0.5s;
+}
+.page-menu__bloc:hover .fas.fa-check-circle {
+  transform: rotate(360deg);
+  transition: 0.5s linear;
 }
 .page-menu__plat {
   margin: 15px 0px 5px 15px;
@@ -311,9 +330,9 @@
   top: 0;
   bottom: 0;
   right: 0;
-  width: 65px;
+  width: 0px;
   border-radius: 0px 20px 20px 0px;
-  opacity: 0;
+  overflow: hidden;
 }
 .page-menu .fas.fa-check-circle {
   position: absolute;
@@ -324,6 +343,16 @@
   opacity: 1;
 }
 
+@keyframes SlideDown {
+  from {
+    transform: translateY(70px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 .footer-omf {
   background: rgba(23, 23, 23, 0.8);
   height: 200px;

@@ -18,6 +18,10 @@
     .far.fa-heart{
         @include heart($bottom: none);
         top: 30px;
+        &:hover{
+            opacity: 0;
+            transition: .01s ;
+        } 
     }
     .fas.fa-heart{
         @include heart($bottom: none);
@@ -26,6 +30,7 @@
         opacity: 0;
         &:hover{
             opacity:1;
+            transition: .3s ease-in-out;
         } 
     }
 }
@@ -50,6 +55,7 @@
         width: 40px;
     }
     &__bloc{
+        animation: SlideDown .5s ease-in-out;
         margin-bottom: 15px;
         background: white;
         height: 70px;
@@ -57,12 +63,18 @@
         box-shadow: $shadow-soft;
         position: relative;
         &:hover .page-menu__check{
-            opacity:1;
-        }
+            width: 65px;
+            transition: width .5s;
+            }
         &:hover .page-menu__prix{
             right: 60px;
-        }
-        }
+            transition: right .5s;
+            }
+        &:hover .fas.fa-check-circle{
+            transform: rotate(360deg);
+            transition: .5s linear ;
+            }
+    }
     &__plat{
         @include title
         }
@@ -84,9 +96,10 @@
         top: 0;
         bottom:0;
         right:0;
-        width: 65px;
+        width: 0px;
         border-radius: 0px 20px 20px 0px;
-        opacity:0;
+        overflow: hidden;
+
     }
     .fas.fa-check-circle{
         position:absolute;
@@ -96,4 +109,15 @@
         color:white;
         opacity: 1;
     }
+}
+
+@keyframes SlideDown {
+     from {
+        transform: translateY(70px);
+        opacity: 0;
+     }
+     to {
+        transform: translateY(0px);
+        opacity: 1;
+     }
 }

@@ -46,8 +46,10 @@
     }
     &:hover{
         background: lighten($primaire, 35%);
+        transition: .5s linear;
         .fas{
             color: $primaire;
+            transition: .5s linear;
         }
     }
 }
