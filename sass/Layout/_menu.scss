@@ -55,7 +55,6 @@
         width: 40px;
     }
     &__bloc{
-        animation: SlideDown .5s ease-in-out;
         margin-bottom: 15px;
         background: white;
         height: 70px;
@@ -84,7 +83,6 @@
         }
     &__prix{
         font-weight: bold;
-        background-color: white;
         width:50px;
         position: absolute;
         right: 0px;
@@ -109,6 +107,22 @@
         color:white;
         opacity: 1;
     }
+}
+
+.page-menu :nth-of-type(2){
+    animation: SlideDown .4s ease-in-out;
+}
+
+.page-menu :nth-of-type(3){
+    animation: SlideDown .8s ease-in-out;
+}
+
+.page-menu :nth-of-type(4){
+    animation: SlideDown 1.2s ease-in-out;
+}
+
+.page-menu :nth-of-type(5){
+    animation: SlideDown 1.6s ease-in-out;
 }
 
 @keyframes SlideDown {
