@@ -63,7 +63,7 @@
         position: relative;
         overflow: hidden;
         &:hover .page-menu__check{
-            transform: translateX(0px);
+            transform: scaleX(1);
             transition: .5s;
             }
         &:hover .page-menu__prix{
@@ -96,8 +96,9 @@
         bottom:0;
         right:0;
         width: 65px;
+        transform-origin: right 50%;
         border-radius: 0px 20px 20px 0px;
-        transform: translateX(65px);
+        transform: scaleX(0);
     }
     .fas.fa-check-circle{
         position:absolute;
