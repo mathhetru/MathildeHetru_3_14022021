@@ -291,14 +291,15 @@
   border-radius: 20px;
   box-shadow: 2px 2px 7px #d3d3d3;
   position: relative;
+  overflow: hidden;
 }
 .page-menu__bloc:hover .page-menu__check {
-  width: 65px;
-  transition: width 0.5s;
+  transform: translateX(0px);
+  transition: 0.5s;
 }
 .page-menu__bloc:hover .page-menu__prix {
-  right: 60px;
-  transition: right 0.5s;
+  transform: translateX(-60px);
+  transition: 0.5s;
 }
 .page-menu__bloc:hover .fas.fa-check-circle {
   transform: rotate(360deg);
@@ -328,9 +329,9 @@
   top: 0;
   bottom: 0;
   right: 0;
-  width: 0px;
+  width: 65px;
   border-radius: 0px 20px 20px 0px;
-  overflow: hidden;
+  transform: translateX(65px);
 }
 .page-menu .fas.fa-check-circle {
   position: absolute;
@@ -341,7 +342,7 @@
   opacity: 1;
 }
 
-.page-menu :nth-of-type(2) {
+.page-menu__title :nth-of-type(2) {
   animation: SlideDown 0.4s ease-in-out;
 }
 

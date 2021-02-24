@@ -61,13 +61,14 @@
         border-radius: 20px;
         box-shadow: $shadow-soft;
         position: relative;
+        overflow: hidden;
         &:hover .page-menu__check{
-            width: 65px;
-            transition: width .5s;
+            transform: translateX(0px);
+            transition: .5s;
             }
         &:hover .page-menu__prix{
-            right: 60px;
-            transition: right .5s;
+            transform: translateX(-60px);
+            transition: .5s;
             }
         &:hover .fas.fa-check-circle{
             transform: rotate(360deg);
@@ -94,10 +95,9 @@
         top: 0;
         bottom:0;
         right:0;
-        width: 0px;
+        width: 65px;
         border-radius: 0px 20px 20px 0px;
-        overflow: hidden;
-
+        transform: translateX(65px);
     }
     .fas.fa-check-circle{
         position:absolute;
@@ -109,7 +109,7 @@
     }
 }
 
-.page-menu :nth-of-type(2){
+.page-menu__title :nth-of-type(2){
     animation: SlideDown .4s ease-in-out;
 }
 
