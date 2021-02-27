@@ -1,0 +1,17 @@
+// Définition des polices personnalisées 
+@font-face
+{
+    font-family: 'Roboto';
+    src: url('font/Roboto-Regular.ttf');
+    src: url('font/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: 'Shrikhand';
+    src: url('font/Shrikhand-Regular.ttf');
+    src: url('font/Shrikhand-Regular.ttf') format('truetype');
+    font-weight:lighter;
+    font-style:normal;
+}
