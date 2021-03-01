@@ -79,14 +79,22 @@
     &__plat{
         @include title
         }
+    &__accetprix{
+        display: flex;
+        justify-content: space-between;
+    }
     &__accompagnement{
         @include sous-title ($size: 0.85rem);
-        overflow: hidden;
-        }
+        text-overflow: ellipsis;
+        overflow:hidden;
+        white-space:nowrap;
+    }
     &__prix{
+        margin: 0;
+        background-color: white;
         font-weight: bold;
+        padding-left: 10px;
         width:50px;
-        position: absolute;
         right: 0px;
         top: 22px;
     }
