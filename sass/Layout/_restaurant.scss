@@ -15,15 +15,12 @@
     justify-content: space-around;
 }
 
-.bloc-title{
-    margin-top: 40px;
-}
-
 .rest-prev{
     position: relative;
     background: white;
     height: 250px;
     border-radius: 20px;
+    margin-top: 25px;
     box-shadow: $shadow-soft;
     &__link{
     text-decoration:none;
@@ -57,7 +54,9 @@
     }
     .fas.fa-heart{
         @include heart;
-        color: $primaire;
+        background: $gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         opacity: 0;
         &:hover{
             opacity:1;

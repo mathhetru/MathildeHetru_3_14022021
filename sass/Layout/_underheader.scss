@@ -1,9 +1,48 @@
+
+// Under header 
+.under-header{
+    background: $color-fond;
+    padding-bottom: 30px;;
+}
+.location{
+    background: $color-shadow-soft;
+    &__link{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include link-texte;
+    }
+    &__text{
+        margin:0 25px;
+    }
+    .fas{
+        margin-bottom: 2px;
+    }
+}
+.bloc-accroche{
+    &__title{
+        font-weight: $weight-title;
+        font-size: $size-title;
+        text-align: center;
+        margin: 40px 50px 20px 50px;
+    }
+    &__text{
+        font-weight: $weight-soustitle;
+        font-size: 1.1rem;
+        text-align: center;
+        margin:0 20px;
+    }
+}
+
+//under-header des pages menu
 .underheader-omf{
     overflow: hidden;
     height: 320px;
        &__picture{
-        height: 400px;
-        width: 110%;
-        object-fit:scale-down;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center bottom;
     }
 }

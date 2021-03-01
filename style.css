@@ -1,9 +1,27 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("font/Roboto-Regular.ttf");
+  src: url("font/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("font/Shrikhand-Regular.ttf");
+  src: url("font/Shrikhand-Regular.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
 .header-omf {
-  position: absolute;
+  position: sticky;
+  top: 0;
   background: white;
-  width: 100%;
   height: 65px;
   box-shadow: 0 2px 4px #636363cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
 .header-omf__arrow {
   text-decoration: none;
@@ -18,53 +36,39 @@
   color: rgba(0, 0, 0, 0.8);
 }
 .header-omf__logo {
-  display: block;
-  margin: auto;
-  margin-top: 18px;
-  width: 200px;
-}
-
-.underheader-omf {
-  overflow: hidden;
-  height: 320px;
-}
-.underheader-omf__picture {
-  height: 400px;
-  width: 110%;
-  object-fit: scale-down;
+  width: 190px;
 }
 
 .under-header {
   background: #ececec;
-  height: 410px;
+  padding-bottom: 30px;
 }
 
 .location {
   background: #d3d3d3;
 }
 .location__link {
-  height: 100px;
+  height: 50px;
   display: flex;
-  align-items: flex-end;
-  padding-bottom: 15px;
-  margin-left: 100px;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: black;
   font-weight: bold;
   font-size: 1rem;
 }
 .location__text {
-  margin: 0;
-  margin-left: 20px;
+  margin: 0 25px;
 }
 .location .fas {
   margin-bottom: 2px;
 }
 
 .bloc-accroche__title {
-  width: 250px;
+  font-weight: bold;
+  font-size: 1.5rem;
   text-align: center;
-  margin: 40px auto 20px auto;
+  margin: 40px 50px 20px 50px;
 }
 .bloc-accroche__text {
   font-weight: normal;
@@ -73,15 +77,25 @@
   margin: 0 20px;
 }
 
+.underheader-omf {
+  overflow: hidden;
+  height: 320px;
+}
+.underheader-omf__picture {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
 .bloc-title {
   font-weight: bold;
   font-size: 1.5rem;
-  margin: 0;
+  margin: 50px 0 10px 0;
 }
 
 .bloc-fonctionnement {
-  height: 400px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   margin: 0px 20px;
   display: flex;
   flex-direction: column;
@@ -96,6 +110,7 @@
   height: 80px;
   border-radius: 20px;
   margin-left: 10px;
+  margin-top: 25px;
   box-shadow: 2px 2px 7px #d3d3d3;
 }
 .onglet-fonct__ball {
@@ -113,7 +128,7 @@
   margin-left: 20px;
 }
 .onglet-fonct__numb {
-  margin: 3px 0 0 9px;
+  margin: 4px 0 0 9px;
   font-weight: bold;
   color: white;
 }
@@ -149,15 +164,12 @@
   justify-content: space-around;
 }
 
-.bloc-title {
-  margin-top: 40px;
-}
-
 .rest-prev {
   position: relative;
   background: white;
   height: 250px;
   border-radius: 20px;
+  margin-top: 25px;
   box-shadow: 2px 2px 7px #d3d3d3;
 }
 .rest-prev__link {
@@ -214,7 +226,9 @@
   position: absolute;
   right: 25px;
   bottom: 25px;
-  color: #9356DC;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
 }
 .rest-prev .fas.fa-heart:hover {
@@ -256,7 +270,9 @@
   right: 25px;
   bottom: none;
   top: 30px;
-  color: #9356DC;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
 }
 .page-restaurant .fas.fa-heart:hover {
@@ -267,7 +283,6 @@
 .page-menu {
   display: flex;
   flex-direction: column;
-  height: auto;
 }
 .page-menu__title {
   margin-bottom: 15px;
@@ -343,19 +358,19 @@
   opacity: 1;
 }
 
-.page-menu__title :nth-of-type(2) {
+.page-menu__title > :nth-of-type(2) {
   animation: SlideDown 0.4s ease-in-out;
 }
 
-.page-menu :nth-of-type(3) {
+.page-menu > :nth-of-type(3) {
   animation: SlideDown 0.8s ease-in-out;
 }
 
-.page-menu :nth-of-type(4) {
+.page-menu > :nth-of-type(4) {
   animation: SlideDown 1.2s ease-in-out;
 }
 
-.page-menu :nth-of-type(5) {
+.page-menu > :nth-of-type(5) {
   animation: SlideDown 1.6s ease-in-out;
 }
 
@@ -423,24 +438,14 @@
   background: #9356DC;
 }
 
-@font-face {
-  font-family: "Roboto";
-  src: url("font/Roboto-Regular.ttf");
-  src: url("font/Roboto-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Shrikhand";
-  src: url("font/Shrikhand-Regular.ttf");
-  src: url("font/Shrikhand-Regular.ttf") format("truetype");
-  font-weight: lighter;
-  font-style: normal;
-}
 body {
   font-family: "Roboto";
   width: 100%;
   margin: auto;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=style.css.map */

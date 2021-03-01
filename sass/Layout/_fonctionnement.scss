@@ -1,11 +1,10 @@
 .bloc-title{
     font-weight: $weight-title;
     font-size: $size-title;
-    margin:0;
+    margin:50px 0 10px 0;
 }
 .bloc-fonctionnement{
-    height:400px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
     margin: $base-margin;
     display: flex;
     flex-direction: column;
@@ -20,6 +19,7 @@
     height: 80px;
     border-radius: 20px;
     margin-left: 10px;
+    margin-top: 25px;
     box-shadow: $shadow-soft;
     &__ball{
         position: relative;
@@ -36,7 +36,7 @@
         margin-left: 20px;
     }
     &__numb{
-        margin:3px 0 0 9px;
+        margin:4px 0 0 9px;
         font-weight: $weight-title;
         color: white;
     }
