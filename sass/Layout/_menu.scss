@@ -82,12 +82,13 @@
     &__accetprix{
         display: flex;
         justify-content: space-between;
+        overflow: hidden;
     }
     &__accompagnement{
         @include sous-title ($size: 0.85rem);
-        text-overflow: ellipsis;
-        overflow:hidden;
         white-space:nowrap;
+        overflow:hidden;
+        text-overflow: ellipsis;
     }
     &__prix{
         margin: 0;

@@ -328,14 +328,15 @@
 .page-menu__accetprix {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 .page-menu__accompagnement {
   margin: 0px 0px 0px 15px;
   font-weight: normal;
   font-size: 0.85rem;
-  text-overflow: ellipsis;
-  overflow: hidden;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .page-menu__prix {
   margin: 0;
