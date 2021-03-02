@@ -342,17 +342,9 @@
 }
 .page-menu__prix {
   margin: 0;
-  background-color: white;
   font-weight: bold;
   padding-left: 10px;
   width: 50px;
-<<<<<<< HEAD
-  background-color: white;
-  position: absolute;
-=======
->>>>>>> anim-menu-flex
-  right: 0px;
-  top: 22px;
 }
 .page-menu__check {
   position: absolute;

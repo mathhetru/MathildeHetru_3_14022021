@@ -90,26 +90,13 @@
         @include sous-title ($size: 0.85rem);
         white-space:nowrap;
         overflow:hidden;
-<<<<<<< HEAD
         text-overflow: ellipsis;        
         }
-=======
-        text-overflow: ellipsis;
-    }
->>>>>>> anim-menu-flex
     &__prix{
         margin: 0;
-        background-color: white;
         font-weight: bold;
         padding-left: 10px;
         width:50px;
-<<<<<<< HEAD
-        background-color: white;
-        position: absolute;
-=======
->>>>>>> anim-menu-flex
-        right: 0px;
-        top: 22px;
     }
     &__check{
         position:absolute;
