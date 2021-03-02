@@ -308,12 +308,12 @@
   position: relative;
   overflow: hidden;
 }
-.page-menu__bloc:hover .page-menu__check {
-  transform: translateX(0px);
+.page-menu__bloc:hover .page-menu__accetprix {
+  width: 80%;
   transition: 0.5s;
 }
-.page-menu__bloc:hover .page-menu__prix {
-  transform: translateX(-60px);
+.page-menu__bloc:hover .page-menu__check {
+  transform: translateX(0px);
   transition: 0.5s;
 }
 .page-menu__bloc:hover .fas.fa-check-circle {
@@ -325,6 +325,13 @@
   font-weight: bold;
   font-size: 1rem;
 }
+.page-menu__accetprix {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 100%;
+  transform-origin: left 50%;
+}
 .page-menu__accompagnement {
   margin: 0px 0px 0px 15px;
   font-weight: normal;
@@ -334,10 +341,16 @@
   text-overflow: ellipsis;
 }
 .page-menu__prix {
+  margin: 0;
+  background-color: white;
   font-weight: bold;
+  padding-left: 10px;
   width: 50px;
+<<<<<<< HEAD
   background-color: white;
   position: absolute;
+=======
+>>>>>>> anim-menu-flex
   right: 0px;
   top: 22px;
 }
@@ -423,6 +436,7 @@
 }
 
 .omf-btn {
+  position: relative;
   display: block;
   text-decoration: none;
   width: 220px;
@@ -431,6 +445,7 @@
   border-radius: 30px;
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0 2px 4px #636363cc;
+  z-index: 1;
 }
 .omf-btn__title {
   text-align: center;
@@ -438,8 +453,21 @@
   color: white;
   font-weight: bold;
 }
-.omf-btn:hover {
-  background: #9356DC;
+.omf-btn:hover::after {
+  opacity: 1;
+}
+.omf-btn::after {
+  content: "";
+  position: absolute;
+  border-radius: 30px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(#9356DC, #ae80e5);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 
 body {
