@@ -308,12 +308,12 @@
   position: relative;
   overflow: hidden;
 }
-.page-menu__bloc:hover .page-menu__check {
-  transform: translateX(0px);
+.page-menu__bloc:hover .page-menu__accetprix {
+  width: 80%;
   transition: 0.5s;
 }
-.page-menu__bloc:hover .page-menu__prix {
-  transform: translateX(-60px);
+.page-menu__bloc:hover .page-menu__check {
+  transform: translateX(0px);
   transition: 0.5s;
 }
 .page-menu__bloc:hover .fas.fa-check-circle {
@@ -329,6 +329,8 @@
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  width: 100%;
+  transform-origin: left 50%;
 }
 .page-menu__accompagnement {
   margin: 0px 0px 0px 15px;
