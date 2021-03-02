@@ -430,6 +430,7 @@
 }
 
 .omf-btn {
+  position: relative;
   display: block;
   text-decoration: none;
   width: 220px;
@@ -438,6 +439,7 @@
   border-radius: 30px;
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0 2px 4px #636363cc;
+  z-index: 1;
 }
 .omf-btn__title {
   text-align: center;
@@ -445,8 +447,21 @@
   color: white;
   font-weight: bold;
 }
-.omf-btn:hover {
-  background: #9356DC;
+.omf-btn:hover::after {
+  opacity: 1;
+}
+.omf-btn::after {
+  content: "";
+  position: absolute;
+  border-radius: 30px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(#9356DC, #ae80e5);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 
 body {

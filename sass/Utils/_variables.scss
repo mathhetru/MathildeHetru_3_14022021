@@ -10,6 +10,7 @@ $color-shadow-soft: #d3d3d3;
 $base-margin: 0px 20px;
 
 $gradient: linear-gradient($secondaire, $primaire);
+$gradient2: linear-gradient($primaire, lighten($primaire, 10));
 
 // SHADOWS 
 $shadow: 0 2px 4px $color-shadow;
