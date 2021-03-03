@@ -16,7 +16,7 @@
         padding-top: 20px;
     }
     .far.fa-heart{
-        @include heart($bottom: none);
+        @include heart($bottom: 0);
         top: 30px;
         &:hover{
             opacity: 0;
@@ -24,7 +24,7 @@
         } 
     }
     .fas.fa-heart{
-        @include heart($bottom: none);
+        @include heart($bottom: 0);
         top: 30px;
         background: $gradient;
         -webkit-background-clip: text;

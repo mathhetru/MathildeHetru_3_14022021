@@ -9,7 +9,7 @@
   font-family: "Shrikhand";
   src: url("font/Shrikhand-Regular.ttf");
   src: url("font/Shrikhand-Regular.ttf") format("truetype");
-  font-weight: lighter;
+  font-weight: normal;
   font-style: normal;
 }
 .header-omf {
@@ -257,7 +257,7 @@
   font-size: 1.5rem;
   position: absolute;
   right: 25px;
-  bottom: none;
+  bottom: 0;
   top: 30px;
 }
 .page-restaurant .far.fa-heart:hover {
@@ -268,7 +268,7 @@
   font-size: 1.5rem;
   position: absolute;
   right: 25px;
-  bottom: none;
+  bottom: 0;
   top: 30px;
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
