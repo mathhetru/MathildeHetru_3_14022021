@@ -16,7 +16,10 @@
         padding-top: 20px;
     }
     .far.fa-heart{
-        @include heart($bottom: 0);
+        font-size: 1.5rem;
+        position:absolute;
+        right: 25px;
+        bottom: 0;
         top: 30px;
         &:hover{
             opacity: 0;
@@ -24,7 +27,10 @@
         } 
     }
     .fas.fa-heart{
-        @include heart($bottom: 0);
+        font-size: 1.5rem;
+        position:absolute;
+        right: 25px;
+        bottom: 0;
         top: 30px;
         background: $gradient;
         -webkit-background-clip: text;
@@ -65,15 +71,15 @@
         overflow: hidden;
         &:hover .page-menu__accetprix{
             width: 80%;
-            transition: .5s;
+            transition: width .5s ease-in-out;
         }
         &:hover .page-menu__check{
             transform: translateX(0px);
-            transition: .5s;
+            transition: .5s ease-in-out;
             }
         &:hover .fas.fa-check-circle{
             transform: rotate(360deg);
-            transition: .5s linear ;
+            transition: rotate .5s ease-in-out ;
             }
     }
     &__plat{
@@ -85,6 +91,7 @@
         overflow: hidden;
         width: 100%;
         transform-origin: left 50%;
+        transition-duration: .5s;
     }
     &__accompagnement{
         @include sous-title ($size: 0.85rem);
@@ -99,7 +106,7 @@
         width:50px;
     }
     &__check{
-        position:absolute;
+        position: absolute;
         background-color: $tertiaire;
         top: 0;
         bottom:0;
@@ -109,6 +116,7 @@
         border-radius: 0px 20px 20px 0px;
         transform: translateX(65px);
         overflow:hidden;
+        transition-duration: .5s;
     }
     .fas.fa-check-circle{
         position:absolute;

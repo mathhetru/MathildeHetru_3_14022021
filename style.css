@@ -310,15 +310,15 @@
 }
 .page-menu__bloc:hover .page-menu__accetprix {
   width: 80%;
-  transition: 0.5s;
+  transition: width 0.5s ease-in-out;
 }
 .page-menu__bloc:hover .page-menu__check {
   transform: translateX(0px);
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 .page-menu__bloc:hover .fas.fa-check-circle {
   transform: rotate(360deg);
-  transition: 0.5s linear;
+  transition: rotate 0.5s ease-in-out;
 }
 .page-menu__plat {
   margin: 15px 0px 5px 15px;
@@ -331,6 +331,7 @@
   overflow: hidden;
   width: 100%;
   transform-origin: left 50%;
+  transition-duration: 0.5s;
 }
 .page-menu__accompagnement {
   margin: 0px 0px 0px 15px;
@@ -357,6 +358,7 @@
   border-radius: 0px 20px 20px 0px;
   transform: translateX(65px);
   overflow: hidden;
+  transition-duration: 0.5s;
 }
 .page-menu .fas.fa-check-circle {
   position: absolute;
