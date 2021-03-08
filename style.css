@@ -257,7 +257,6 @@
   font-size: 1.5rem;
   position: absolute;
   right: 25px;
-  bottom: 0;
   top: 30px;
 }
 .page-restaurant .far.fa-heart:hover {
@@ -268,7 +267,6 @@
   font-size: 1.5rem;
   position: absolute;
   right: 25px;
-  bottom: 0;
   top: 30px;
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
