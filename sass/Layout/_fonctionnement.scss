@@ -12,7 +12,6 @@
 }
 
 .onglet-fonct{
-    width: 100%;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -51,5 +50,11 @@
             color: $primaire;
             transition: .5s linear;
         }
+    }
+}
+
+@media screen and (min-width: 580px) {
+    .onglet-fonct{
+        width: 100%;
     }
 }

@@ -104,7 +104,6 @@
 }
 
 .onglet-fonct {
-  width: 100%;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -149,6 +148,11 @@
   transition: 0.5s linear;
 }
 
+@media screen and (min-width: 580px) {
+  .onglet-fonct {
+    width: 100%;
+  }
+}
 .fond-gris {
   background: #ececec;
 }
@@ -230,7 +234,7 @@
   transition: 0.3s ease-in-out;
 }
 
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 580px) {
   .bloc-fonctionnement {
     flex-direction: row;
     justify-content: space-between;
@@ -399,7 +403,7 @@
     opacity: 1;
   }
 }
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 580px) {
   .page-menu {
     display: flex;
     flex-direction: row;
