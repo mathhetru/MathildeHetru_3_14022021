@@ -10,14 +10,13 @@
     right: 15px;
     top: 15px;
     background: $tertiaire;
-    height: 30px;
-    width: 80px;
     border-radius: 2px;
     &text{
+        display: block;
         font-size: 0.9rem;
         text-align: center;
         color: darken($tertiaire, 40%);
-        margin-top: 5px;
+        padding: 8px;
     }
 }
 

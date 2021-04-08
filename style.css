@@ -29,8 +29,9 @@
   font-weight: bold;
   font-size: 1.2rem;
   position: absolute;
-  top: 25px;
   left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .header-omf__arrow:hover {
   color: rgba(0, 0, 0, 0.8);
@@ -91,26 +92,25 @@
 .bloc-title {
   font-weight: bold;
   font-size: 1.5rem;
-  margin: 50px 0 10px 0;
+  padding: 50px 0 10px 20px;
+  margin: 0;
 }
 
 .bloc-fonctionnement {
-  padding-bottom: 80px;
-  margin: 0px 20px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
 .onglet-fonct {
+  width: 100%;
   text-decoration: none;
   display: flex;
   align-items: center;
   background: #ececec;
-  height: 80px;
   border-radius: 20px;
-  margin-left: 10px;
-  margin-top: 25px;
+  margin: 10px 20px 10px 25px;
   box-shadow: 2px 2px 7px #d3d3d3;
 }
 .onglet-fonct__ball {
@@ -137,7 +137,8 @@
   color: black;
   font-weight: bold;
   font-size: 1rem;
-  margin-left: 18px;
+  padding: 27px;
+  margin: 0;
 }
 .onglet-fonct:hover {
   background: #f2eafb;
@@ -156,8 +157,6 @@
 }
 
 .bloc-restaurant {
-  height: 1150px;
-  margin: 0px 20px;
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
@@ -169,7 +168,7 @@
   background: white;
   height: 250px;
   border-radius: 20px;
-  margin-top: 25px;
+  margin: 20px;
   box-shadow: 2px 2px 7px #d3d3d3;
 }
 .rest-prev__link {
@@ -191,15 +190,14 @@
   right: 15px;
   top: 15px;
   background: #99E2D0;
-  height: 30px;
-  width: 80px;
   border-radius: 2px;
 }
 .rest-prev__newtext {
+  display: block;
   font-size: 0.9rem;
   text-align: center;
   color: #278870;
-  margin-top: 5px;
+  padding: 8px;
 }
 .rest-prev__title {
   margin: 15px 0px 5px 15px;
@@ -217,10 +215,6 @@
   right: 25px;
   bottom: 25px;
 }
-.rest-prev .far.fa-heart:hover {
-  opacity: 0;
-  transition: 0.01s;
-}
 .rest-prev .fas.fa-heart {
   font-size: 1.5rem;
   position: absolute;
@@ -236,6 +230,17 @@
   transition: 0.3s ease-in-out;
 }
 
+@media screen and (min-width: 380px) {
+  .bloc-fonctionnement {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .bloc-restaurant {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .fond-gris-menu {
   position: relative;
   background-color: #ececec;
@@ -298,16 +303,17 @@
   width: 40px;
 }
 .page-menu__bloc {
-  margin-bottom: 15px;
+  margin: 0 15px 15px 0;
   background: white;
   height: 70px;
+  width: 100%;
   border-radius: 20px;
   box-shadow: 2px 2px 7px #d3d3d3;
   position: relative;
   overflow: hidden;
 }
 .page-menu__bloc:hover .page-menu__accetprix {
-  width: 80%;
+  width: calc(100% - 65px);
   transition: width 0.5s ease-in-out;
 }
 .page-menu__bloc:hover .page-menu__check {
@@ -391,6 +397,12 @@
   to {
     transform: translateY(0px);
     opacity: 1;
+  }
+}
+@media screen and (min-width: 380px) {
+  .page-menu {
+    display: flex;
+    flex-direction: row;
   }
 }
 .footer-omf {

@@ -12,8 +12,9 @@
     &__arrow{
         @include  link-texte ($color: $color-shadow, $size: 1.2rem);
         position: absolute;
-        top: 25px;
         left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
         &:hover{
             color:darken($color-shadow,50%)
         }

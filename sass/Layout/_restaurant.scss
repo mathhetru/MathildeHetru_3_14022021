@@ -7,8 +7,6 @@
 }
 
 .bloc-restaurant{
-    height:1150px;
-    margin: $base-margin;
     padding-bottom: 50px;
     display: flex;
     flex-direction: column;
@@ -20,7 +18,7 @@
     background: white;
     height: 250px;
     border-radius: 20px;
-    margin-top: 25px;
+    margin: 20px;
     box-shadow: $shadow-soft;
     &__link{
     text-decoration:none;
@@ -47,10 +45,6 @@
     }
     .far.fa-heart{
         @include heart;
-        &:hover{
-            opacity: 0;
-            transition: .01s ;
-        } 
     }
     .fas.fa-heart{
         @include heart;
@@ -59,8 +53,19 @@
         -webkit-text-fill-color: transparent;
         opacity: 0;
         &:hover{
-            opacity:1;
+            opacity: 1;
             transition: .3s ease-in-out;
         }  
+    }
+}
+
+@media screen and (min-width: 380px) {
+    .bloc-fonctionnement{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .bloc-restaurant{
+        flex-direction: row;
+        justify-content: space-between;
     }
 }

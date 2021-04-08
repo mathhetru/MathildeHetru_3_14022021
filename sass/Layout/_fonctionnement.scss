@@ -1,25 +1,24 @@
 .bloc-title{
     font-weight: $weight-title;
     font-size: $size-title;
-    margin:50px 0 10px 0;
+    padding:50px 0 10px 20px;
+    margin:0;
 }
 .bloc-fonctionnement{
-    padding-bottom: 80px;
-    margin: $base-margin;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 .onglet-fonct{
-    text-decoration:none;
+    width: 100%;
+    text-decoration: none;
     display: flex;
     align-items: center;
     background: $color-fond;
-    height: 80px;
     border-radius: 20px;
-    margin-left: 10px;
-    margin-top: 25px;
+    margin: 10px 20px 10px 25px;
     box-shadow: $shadow-soft;
     &__ball{
         position: relative;
@@ -42,7 +41,8 @@
     }
     &__text{
         @include link-texte;
-        margin-left: 18px;
+        padding: 27px;
+        margin: 0;
     }
     &:hover{
         background: lighten($primaire, 35%);

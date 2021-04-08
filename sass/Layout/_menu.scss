@@ -60,15 +60,16 @@
         width: 40px;
     }
     &__bloc{
-        margin-bottom: 15px;
+        margin: 0 15px 15px 0;
         background: white;
         height: 70px;
+        width: 100%;
         border-radius: 20px;
         box-shadow: $shadow-soft;
         position: relative;
         overflow: hidden;
         &:hover .page-menu__accetprix{
-            width: 80%;
+            width: calc(100% - 65px);
             transition: width .5s ease-in-out;
         }
         &:hover .page-menu__check{
@@ -113,7 +114,7 @@
         transform-origin: right 50%;
         border-radius: 0px 20px 20px 0px;
         transform: translateX(65px);
-        overflow:hidden;
+        overflow: hidden;
         transition-duration: .5s;
     }
     .fas.fa-check-circle{
@@ -151,4 +152,12 @@
         transform: translateY(0px);
         opacity: 1;
      }
+}
+
+
+@media screen and (min-width: 380px) {
+    .page-menu{
+        display: flex;
+        flex-direction: row;
+    }
 }
