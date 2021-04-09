@@ -15,15 +15,15 @@
         margin:0;
         padding-top: 20px;
     }
-    .far.fa-heart{
-        font-size: 1.5rem;
-        position:absolute;
-        right: 25px;
-        top: 30px;
-        &:hover{
+    .hoverheart:hover{
+        .fas.fa-heart {
+            opacity: 1;
+            transition: .3s ease-in-out;
+        }
+        .far.fa-heart{
             opacity: 0;
-            transition: .01s ;
-        } 
+            transition: .3s ease-in-out;
+        }
     }
     .fas.fa-heart{
         font-size: 1.5rem;
@@ -34,10 +34,13 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         opacity: 0;
-        &:hover{
-            opacity:1;
-            transition: .3s ease-in-out;
-        } 
+    }
+    .far.fa-heart{
+        font-size: 1.5rem;
+        position:absolute;
+        right: 25px;
+        top: 30px;
+        opacity: 1;
     }
 }
 

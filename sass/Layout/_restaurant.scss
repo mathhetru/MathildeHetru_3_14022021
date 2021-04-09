@@ -43,8 +43,15 @@
     &__place{
         @include sous-title
     }
-    .far.fa-heart{
-        @include heart;
+    .hoverheart:hover{
+        .fas.fa-heart {
+            opacity: 1;
+            transition: .3s ease-in-out;
+        }
+        .far.fa-heart{
+            opacity: 0;
+            transition: .3s ease-in-out;
+        }
     }
     .fas.fa-heart{
         @include heart;
@@ -52,10 +59,10 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         opacity: 0;
-        &:hover{
-            opacity: 1;
-            transition: .3s ease-in-out;
-        }  
+    }
+    .far.fa-heart{
+        @include heart;
+        opacity: 1;
     }
 }
 

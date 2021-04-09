@@ -213,11 +213,13 @@
   font-weight: normal;
   font-size: 1rem;
 }
-.rest-prev .far.fa-heart {
-  font-size: 1.5rem;
-  position: absolute;
-  right: 25px;
-  bottom: 25px;
+.rest-prev .hoverheart:hover .fas.fa-heart {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+.rest-prev .hoverheart:hover .far.fa-heart {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
 }
 .rest-prev .fas.fa-heart {
   font-size: 1.5rem;
@@ -229,9 +231,12 @@
   -webkit-text-fill-color: transparent;
   opacity: 0;
 }
-.rest-prev .fas.fa-heart:hover {
+.rest-prev .far.fa-heart {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
   opacity: 1;
-  transition: 0.3s ease-in-out;
 }
 
 @media screen and (min-width: 580px) {
@@ -262,15 +267,13 @@
   margin: 0;
   padding-top: 20px;
 }
-.page-restaurant .far.fa-heart {
-  font-size: 1.5rem;
-  position: absolute;
-  right: 25px;
-  top: 30px;
+.page-restaurant .hoverheart:hover .fas.fa-heart {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
 }
-.page-restaurant .far.fa-heart:hover {
+.page-restaurant .hoverheart:hover .far.fa-heart {
   opacity: 0;
-  transition: 0.01s;
+  transition: 0.3s ease-in-out;
 }
 .page-restaurant .fas.fa-heart {
   font-size: 1.5rem;
@@ -282,9 +285,12 @@
   -webkit-text-fill-color: transparent;
   opacity: 0;
 }
-.page-restaurant .fas.fa-heart:hover {
+.page-restaurant .far.fa-heart {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 25px;
+  top: 30px;
   opacity: 1;
-  transition: 0.3s ease-in-out;
 }
 
 .page-menu {
